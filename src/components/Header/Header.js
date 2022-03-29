@@ -54,7 +54,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
                 height={'40px'}
                 className={classes.logo}
               />
-              beefy.finance
+              YieldHub
             </Hidden>
             <Hidden smUp>
               <img

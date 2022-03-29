@@ -59,6 +59,7 @@ export { auroraStakePools } from './stake/aurora_stake';
 export { fuseStakePools } from './stake/fuse_stake';
 export { metisStakePools } from './stake/metis_stake';
 export { moonbeamStakePools } from './stake/moonbeam_stake';
+export { telosPools } from './vault/telos_pools';
 export { bscPools } from './vault/bsc_pools';
 export { hecoPools } from './vault/heco_pools';
 export { avalanchePools } from './vault/avalanche_pools';

@@ -63,6 +63,7 @@ import {
   moonbeamStakePools,
   moonbeamAddressBook,
   moonbeamZaps,
+  telosPools,
 } from '../configure';
 
 export const appNetworkId = window.REACT_APP_NETWORK_ID;
@@ -82,6 +83,7 @@ const networkTxUrls = {
   122: hash => `https://explorer.fuse.io/tx/${hash}`,
   1088: hash => `https://andromeda-explorer.metis.io/tx/${hash}`,
   1284: hash => `https://moonscan.io/tx/${hash}`,
+  40: hash => `https://www.teloscan.io/${hash}`,
 };
 
 const networkFriendlyName = {
@@ -99,6 +101,7 @@ const networkFriendlyName = {
   122: 'Fuse',
   1088: 'Metis',
   1284: 'Moonbeam',
+  40: 'Telos',
 };
 
 const networkBuyUrls = {
@@ -120,6 +123,7 @@ const networkBuyUrls = {
   122: '',
   1088: 'https://netswap.io/#/swap?outputCurrency=0xe6801928061cdbe32ac5ad0634427e140efd05f9',
   1284: '',
+  40: '', // TODO fill in our token's buy address
 };
 
 export const getNetworkCoin = () => {
@@ -156,6 +160,8 @@ export const getNetworkPools = () => {
       return metisPools;
     case 1284:
       return moonbeamPools;
+    case 40:
+      return telosPools;
     default:
       return [];
   }
@@ -191,6 +197,8 @@ export const getNetworkVaults = (networkId = appNetworkId) => {
       return indexBy(metisPools, 'id');
     case 1284:
       return indexBy(moonbeamPools, 'id');
+    case 40:
+      return indexBy(telosPools, 'id');
     default:
       return {};
   }
@@ -226,6 +234,8 @@ export const getNetworkLaunchpools = (networkId = appNetworkId) => {
       return indexBy(metisStakePools, 'id');
     case 1284:
       return indexBy(moonbeamStakePools, 'id');
+    case 40:
+      return indexBy([], 'id'); // TODO add stake pools
     default:
       return {};
   }
@@ -262,6 +272,8 @@ export const getNetworkTokens = () => {
       return metisAddressBook.tokens;
     case 1284:
       return moonbeamAddressBook.tokens;
+    case 40:
+      return []; // TODO add tokens
     default:
       throw new Error(
         `Create address book for chainId(${chainId}) first. Check out https://github.com/beefyfinance/address-book`
@@ -315,6 +327,9 @@ export const getNetworkBurnTokens = () => {
       return {};
     case 1284:
       return {};
+    case 40:
+      return {}; // TODO add burn tokens?
+
     default:
       throw new Error(`Create address book for this chainId first.`);
   }
@@ -350,6 +365,8 @@ export const getNetworkZaps = () => {
       return metisZaps;
     case 1284:
       return moonbeamZaps;
+    case 40:
+      return [];
     default:
       return [];
   }
@@ -423,8 +440,6 @@ export const getNetworkStables = () => {
         'JPYC',
         'jCAD',
         'CADC',
-        'jSGD',
-        'XSGD',
       ];
     case 250:
       return [
@@ -460,6 +475,8 @@ export const getNetworkStables = () => {
       return ['mUSDT', 'mUSDC'];
     case 1284:
       return ['USDC', 'USDT', 'DAI', 'BUSD'];
+    case 40:
+      return []; // TODO add TELOS stables
     default:
       return [];
   }
@@ -495,6 +512,8 @@ export const getNetworkMulticall = () => {
       return '0x4fd2e1c2395dc088F36cab06DCe47F88A912fC85';
     case 1284:
       return '0xC9F6b1B53E056fd04bE5a197ce4B2423d456B982';
+    case 40:
+      return '0x66744D8690bC24Fd89aF8f856d0f1404371F195D';
     default:
       return '';
   }
@@ -1212,6 +1231,10 @@ export const getNetworkConnectors = t => {
           },
         },
       };
+    // TODO fill out wallet connect configuration
+    case 40:
+    case 41:
+      return {};
     default:
       return {};
   }

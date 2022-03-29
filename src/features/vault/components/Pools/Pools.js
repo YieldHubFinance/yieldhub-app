@@ -38,9 +38,9 @@ export default function Pools() {
   }, [fetchApys]);
 
   useEffect(() => {
-    fetchBifibuyback();
-    const id = setInterval(fetchBifibuyback, FETCH_INTERVAL_MS);
-    return () => clearInterval(id);
+    // fetchBifibuyback();
+    // const id = setInterval(fetchBifibuyback, FETCH_INTERVAL_MS);
+    // return () => clearInterval(id);
   }, [fetchBifibuyback]);
 
   useEffect(() => {
@@ -84,7 +84,7 @@ export default function Pools() {
         <div className={classes.tvl}>
           <span className={classes.title}>
             TVL{' '}
-            {fetchVaultsDataDone && poolsTvl > 0 ? (
+            {fetchVaultsDataDone && poolsTvl >= 0 ? (
               formatGlobalTvl(poolsTvl)
             ) : (
               <TVLLoader className={classes.titleLoader} />
