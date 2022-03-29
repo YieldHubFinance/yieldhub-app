@@ -1233,8 +1233,17 @@ export const getNetworkConnectors = t => {
       };
     // TODO fill out wallet connect configuration
     case 40:
-    case 41:
-      return {};
+      return {
+        network: 'telos',
+        cacheProvider: true,
+        providerOptions: {
+          injected: {
+            display: {
+              name: 'MetaMask',
+            },
+          },
+        },
+      };
     default:
       return {};
   }
