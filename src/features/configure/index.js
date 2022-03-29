@@ -87,4 +87,5 @@ export { auroraZaps } from './zap/aurora_zaps';
 export { fuseZaps } from './zap/fuse_zaps';
 export { metisZaps } from './zap/metis_zaps';
 export { moonbeamZaps } from './zap/moonbeam_zaps';
+export { telosZaps } from './zap/telos_zaps';
 export { nativeCoins } from './native_coins';
