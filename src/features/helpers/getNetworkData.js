@@ -478,7 +478,7 @@ export const getNetworkStables = () => {
     case 1284:
       return ['USDC', 'USDT', 'DAI', 'BUSD'];
     case 40:
-      return []; // TODO add TELOS stables
+      return ['USDC', 'USDT']; // TODO add TELOS stables
     default:
       return [];
   }

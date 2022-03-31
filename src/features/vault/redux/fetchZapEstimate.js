@@ -42,6 +42,7 @@ export function fetchZapDepositEstimate({
         });
     });
 
+    console.log(promise);
     return promise;
   };
 }

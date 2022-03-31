@@ -1,4 +1,4 @@
-import { beefyUniV2ZapABI } from '../configure';
+import { yieldhubOmnidexZapABI } from '../configure';
 import { enqueueSnackbar } from '../common/redux/actions';
 
 export const zapWithdraw = async ({
@@ -9,10 +9,10 @@ export const zapWithdraw = async ({
   zapAddress,
   dispatch,
 }) => {
-  console.log('beefOut(vaultAddress, amount)', vaultAddress, amount);
+  console.log('yieldhubOut(vaultAddress, amount)', vaultAddress, amount);
 
-  const contract = new web3.eth.Contract(beefyUniV2ZapABI, zapAddress);
-  const transaction = contract.methods.beefOut(vaultAddress, amount).send({
+  const contract = new web3.eth.Contract(yieldhubOmnidexZapABI, zapAddress);
+  const transaction = contract.methods.yieldhubOut(vaultAddress, amount).send({
     from: address,
   });
 
@@ -37,9 +37,9 @@ export const zapWithdrawAndSwap = async ({
     amountOutMin
   );
 
-  const contract = new web3.eth.Contract(beefyUniV2ZapABI, zapAddress);
+  const contract = new web3.eth.Contract(yieldhubOmnidexZapABI, zapAddress);
   const transaction = contract.methods
-    .beefOutAndSwap(vaultAddress, amount, tokenOut, amountOutMin)
+    .yieldhubOutAndSwap(vaultAddress, amount, tokenOut, amountOutMin)
     .send({
       from: address,
     });

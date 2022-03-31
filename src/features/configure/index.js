@@ -47,6 +47,8 @@ export {
   beefyUniV2ZapABI,
   uniswapV2PairABI,
   uniswapV2RouterABI,
+  yieldhubOmnidexZapABI,
+  omnidexRouter01ABI,
   launchPoolABI,
 } from './abi';
 export { bscStakePools } from './stake/bsc_stake';
