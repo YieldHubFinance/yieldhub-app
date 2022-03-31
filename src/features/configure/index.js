@@ -1,4 +1,5 @@
 import { addressBook } from 'blockchain-addressbook';
+import { addressBook as yhAddressBook } from '@yieldhubfinance/blockchain-addressbook';
 
 const {
   polygon: polygonAddressBook,
@@ -32,6 +33,9 @@ export {
   metisAddressBook,
   moonbeamAddressBook,
 };
+
+const { telos: telosAddressBook } = yhAddressBook;
+export { telosAddressBook };
 
 export {
   vaultABI,
