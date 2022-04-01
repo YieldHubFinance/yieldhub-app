@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <div className={classes.root}>
-      <a
+      {/* <a
         href="https://docs.beefy.finance"
         target="_blank"
         rel="noopener noreferrer"
@@ -20,7 +20,7 @@ const Footer = () => {
       >
         <i className={`fas fa-book ${classes.linkIcon}`} />
         <span>{t('docs')}</span>
-      </a>
+      </a> */}
 
       <a
         href="https://github.com/yieldhubfinance"
@@ -33,7 +33,7 @@ const Footer = () => {
       </a>
 
       <a
-        href="https://twitter.com/beefyfinance"
+        href="https://twitter.com/yieldhubfinance"
         target="_blank"
         rel="noopener noreferrer"
         className={classes.link}

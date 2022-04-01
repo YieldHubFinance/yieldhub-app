@@ -191,11 +191,6 @@ const styles = theme => ({
     width: '100%',
   },
   collapse: {
-    // [theme.breakpoints.up('md')]: {
-    //   display: 'flex !important',
-    //   MsFlexPreferredSize: 'auto',
-    //   flexBasis: 'auto',
-    // },
     display: 'flex !important',
     MsFlexPreferredSize: 'auto',
     flexBasis: 'auto',
