@@ -1,8 +1,8 @@
 {
-  "name": "beefy-app",
+  "name": "yieldhub-app",
   "homepage": ".",
-  "version": "1.3.0",
-  "repository": "beefyfinance/beefy-app",
+  "version": "0.0.1",
+  "repository": "yieldhubfinance/yieldhub-app",
   "license": "MIT",
   "private": true,
   "type": "module",

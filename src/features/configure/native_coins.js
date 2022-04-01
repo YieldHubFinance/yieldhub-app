@@ -119,4 +119,12 @@ export const nativeCoins = [
     wrappedSymbol: 'WGLMR',
     allowance: Infinity,
   },
+  {
+    chainId: 40,
+    name: 'Telos',
+    symbol: 'TELOS',
+    decimals: 18,
+    wrappedSymbol: 'WTLOS',
+    allowance: Infinity,
+  },
 ];
