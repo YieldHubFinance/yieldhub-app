@@ -72,7 +72,7 @@ export default function Pools() {
 
   return (
     <Grid container className={classes.container}>
-      <Grid item xs={6}>
+      <Grid item xs={12}>
         <div className={classes.tvl}>
           <span className={classes.title}>
             TVL{' '}
@@ -108,8 +108,6 @@ export default function Pools() {
           </h4>
         </div>
       </Grid>
-
-      <Grid item xs={6}></Grid>
 
       <VisiblePools
         pools={pools}
