@@ -57,7 +57,7 @@ function Root() {
   return (
     <Provider store={store}>
       <Helmet>
-        <title>{getPageMeta('App-Meta-Title')}</title>
+        <title>{'Yieldhub Finance'}</title>
         <meta name="description" content={getPageMeta('App-Meta-Description')} />
         <meta property="og:title" content={getPageMeta('App-Meta-Title')} />
         <meta property="og:description" content={getPageMeta('App-Meta-Description')} />
