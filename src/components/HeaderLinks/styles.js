@@ -17,9 +17,6 @@ const styles = theme => ({
       MsFlexDirection: 'row',
       flexDirection: 'row',
     },
-    [theme.breakpoints.down('sm')]: {
-      display: 'block',
-    },
     marginTop: '0px',
     display: 'flex',
     paddingLeft: '0',
@@ -40,16 +37,6 @@ const styles = theme => ({
         overflow: 'scroll',
       },
       width: '100%',
-      '&:not(:last-child)': {
-        '&:after': {
-          width: 'calc(100% - 30px)',
-          content: '""',
-          display: 'block',
-          height: '1px',
-          marginLeft: '15px',
-          backgroundColor: grayColor[14],
-        },
-      },
     },
   },
   listItemText: {

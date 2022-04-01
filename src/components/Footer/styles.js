@@ -5,9 +5,6 @@ const styles = theme => ({
     justifyContent: 'space-around',
     maxWidth: '40rem',
     margin: '2rem auto',
-    '@media (min-width: 769px)': {
-      margin: '2rem auto 10rem',
-    },
   },
   column: {
     display: 'flex',

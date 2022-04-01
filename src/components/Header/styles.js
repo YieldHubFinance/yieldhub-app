@@ -191,11 +191,14 @@ const styles = theme => ({
     width: '100%',
   },
   collapse: {
-    [theme.breakpoints.up('md')]: {
-      display: 'flex !important',
-      MsFlexPreferredSize: 'auto',
-      flexBasis: 'auto',
-    },
+    // [theme.breakpoints.up('md')]: {
+    //   display: 'flex !important',
+    //   MsFlexPreferredSize: 'auto',
+    //   flexBasis: 'auto',
+    // },
+    display: 'flex !important',
+    MsFlexPreferredSize: 'auto',
+    flexBasis: 'auto',
     WebkitBoxFlex: '1',
     MsFlexPositive: '1',
     flexGrow: '1',

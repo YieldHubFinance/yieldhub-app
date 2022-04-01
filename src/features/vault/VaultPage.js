@@ -10,7 +10,6 @@ export default function VaultDetailsPage() {
   return (
     <>
       <ScrollToTop />
-      <Disclaimer />
       <PoolDetails vaultId={vaultId} />
     </>
   );
