@@ -1,4 +1,5 @@
 import { addressBook } from 'blockchain-addressbook';
+import { addressBook as yhAddressBook } from '@yieldhubfinance/blockchain-addressbook';
 
 const {
   polygon: polygonAddressBook,
@@ -33,6 +34,9 @@ export {
   moonbeamAddressBook,
 };
 
+const { telos: telosAddressBook } = yhAddressBook;
+export { telosAddressBook };
+
 export {
   vaultABI,
   bnbVaultABI,
@@ -43,6 +47,8 @@ export {
   beefyUniV2ZapABI,
   uniswapV2PairABI,
   uniswapV2RouterABI,
+  yieldhubOmnidexZapABI,
+  omnidexRouter01ABI,
   launchPoolABI,
 } from './abi';
 export { bscStakePools } from './stake/bsc_stake';

@@ -64,6 +64,8 @@ import {
   moonbeamAddressBook,
   moonbeamZaps,
   telosPools,
+  telosZaps,
+  telosAddressBook,
 } from '../configure';
 
 export const appNetworkId = window.REACT_APP_NETWORK_ID;
@@ -273,7 +275,7 @@ export const getNetworkTokens = () => {
     case 1284:
       return moonbeamAddressBook.tokens;
     case 40:
-      return []; // TODO add tokens
+      return telosAddressBook.tokens; // TODO add tokens
     default:
       throw new Error(
         `Create address book for chainId(${chainId}) first. Check out https://github.com/beefyfinance/address-book`
@@ -366,7 +368,7 @@ export const getNetworkZaps = () => {
     case 1284:
       return moonbeamZaps;
     case 40:
-      return [];
+      return telosZaps;
     default:
       return [];
   }
@@ -476,7 +478,7 @@ export const getNetworkStables = () => {
     case 1284:
       return ['USDC', 'USDT', 'DAI', 'BUSD'];
     case 40:
-      return []; // TODO add TELOS stables
+      return ['USDC', 'USDT']; // TODO add TELOS stables
     default:
       return [];
   }

@@ -90,7 +90,7 @@ export const telosPools = [
     token: 'USDC-USDT LP',
     tokenDescription: 'OmniDex',
     tokenAddress: '0x8805F519663E47aBd6adbA4303639f69e51fd112',
-    tokenDecimals: 18,
+    tokenDecimals: 6,
     tokenDescriptionUrl: '#',
     earnedToken: 'yhUSDCUSDT',
     earnedTokenAddress: '0x648b229F82f0aE092fB0e37B0B9524c3D9869e9b',
