@@ -1,11 +1,12 @@
 const styles = theme => ({
   container: {
     paddingTop: '4px',
+    display: 'flex',
   },
   tvl: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'flex-end',
+    alignItems: 'flex-start',
   },
   title: {
     fontSize: '32px',

@@ -14,6 +14,7 @@ import { usePoolsTvl, useUserTvl } from '../../hooks/usePoolsTvl';
 import { formatGlobalTvl } from 'features/helpers/format';
 import { useFetchBifibuyback } from 'features/vault/redux/fetchBifiBuyback';
 import { getNetworkFriendlyName } from '../../../helpers/getNetworkData';
+import { getSingleAssetSrc } from 'features/helpers/getSingleAssetSrc';
 
 const FETCH_INTERVAL_MS = 15 * 1000;
 
@@ -72,15 +73,6 @@ export default function Pools() {
   return (
     <Grid container className={classes.container}>
       <Grid item xs={6}>
-        <h1 className={classes.title}>{t('Vault-Network')}</h1>
-        <NetworksToggle />
-        {fetchVaultsDataDone && activePoolCount && (
-          <>
-            <span className={classes.text}>{`${activePoolCount} ${t('Vault-MainTitle')}`}</span>
-          </>
-        )}
-      </Grid>
-      <Grid item xs={6}>
         <div className={classes.tvl}>
           <span className={classes.title}>
             TVL{' '}
@@ -95,6 +87,10 @@ export default function Pools() {
             <span className={classes.text}>
               {t('Vault-BifiBuyback', { amount: formatGlobalTvl(chainBifibuyback) })}
             </span>
+          )}
+
+          {fetchVaultsDataDone && activePoolCount && (
+            <span className={classes.text}>{`${activePoolCount} ${t('Vault-MainTitle')}`}</span>
           )}
 
           <span className={classes.text}>
@@ -112,6 +108,8 @@ export default function Pools() {
           </h4>
         </div>
       </Grid>
+
+      <Grid item xs={6}></Grid>
 
       <VisiblePools
         pools={pools}

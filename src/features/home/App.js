@@ -14,7 +14,6 @@ import { useConnectWallet, useDisconnectWallet } from './redux/hooks';
 import useNightMode from './hooks/useNightMode';
 import createThemeMode from './jss/appTheme';
 import { useLocation } from 'react-router';
-import V2Banner from 'components/V2Banner/V2Banner.js';
 
 const themes = { light: null, dark: null };
 const getTheme = mode => {
@@ -84,7 +83,6 @@ export default function App({ children }) {
             />
             <div className={classes.container}>
               <div className={classes.children}>
-                <V2Banner />
                 <NetworkConnectNotice
                   web3={web3}
                   address={address}
@@ -97,7 +95,6 @@ export default function App({ children }) {
               </div>
             </div>
             <Footer />
-            <Pastures />
           </div>
         </SnackbarProvider>
       </ThemeProvider>

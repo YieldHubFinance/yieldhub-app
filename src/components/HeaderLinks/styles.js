@@ -17,9 +17,6 @@ const styles = theme => ({
       MsFlexDirection: 'row',
       flexDirection: 'row',
     },
-    [theme.breakpoints.down('sm')]: {
-      display: 'block',
-    },
     marginTop: '0px',
     display: 'flex',
     paddingLeft: '0',
@@ -40,16 +37,6 @@ const styles = theme => ({
         overflow: 'scroll',
       },
       width: '100%',
-      '&:not(:last-child)': {
-        '&:after': {
-          width: 'calc(100% - 30px)',
-          content: '""',
-          display: 'block',
-          height: '1px',
-          marginLeft: '15px',
-          backgroundColor: grayColor[14],
-        },
-      },
     },
   },
   listItemText: {
@@ -67,7 +54,7 @@ const styles = theme => ({
     margin: '0px',
     display: 'inline-flex',
     '&:hover,&:focus': {
-      color: 'inherit',
+      color: theme.palette.background.secondary,
     },
     '& .fab,& .far,& .fal,& .fas,& .material-icons': {
       position: 'relative',
@@ -220,7 +207,7 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.secondary,
     color: '#fff',
     '&:hover': {
-      backgroundColor: theme.palette.background.border,
+      backgroundColor: theme.palette.background.secondary,
     },
     [theme.breakpoints.up('md')]: {
       width: '180px',
