@@ -2,7 +2,8 @@
 FROM node:14-alpine as react-build
 WORKDIR /app
 COPY . ./
-RUN yarn
+RUN apk add --no-cache git
+RUN yarn install --frozen-lockfile --production
 RUN yarn build-production
 
 # server environment
