@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import BigNumber from 'bignumber.js';
 import { useConnectWallet } from '../../../home/redux/hooks';
 import { useFetchApys, useFetchBalances, useFetchVaultsData } from '../../redux/hooks';
+import { runOnInterval } from 'common/background';
 import { byDecimals } from 'features/helpers/bignumber';
 import { formatTvl } from 'features/helpers/format';
 import HomeLink from './HomeLink/HomeLink';
@@ -76,9 +77,7 @@ const PoolDetails = ({ vaultId }) => {
     };
     fetch();
 
-    const id = setInterval(fetch, FETCH_INTERVAL_MS);
-    return () => clearInterval(id);
-
+    return runOnInterval(fetch, FETCH_INTERVAL_MS);
     // Adding tokens and pools to this dep list, causes an endless loop, DDoSing the api
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [address, web3, fetchBalances, fetchVaultsData]);
