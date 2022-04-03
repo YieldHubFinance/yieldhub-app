@@ -6,11 +6,11 @@ const singleAssetCache = {};
 
 export const getSingleAssetSrc = symbol => {
   if (symbol in singleAssetCache) {
-    return singleAssetCache[symbol];
+    return singleAssetCache[symbol].default;
   }
 
   if (symbol in singleAssets) {
-    return (singleAssetCache[symbol] = singleAssetRequire(singleAssets[symbol]));
+    return (singleAssetCache[symbol] = singleAssetRequire(singleAssets[symbol])).default;
   }
 
   throw new Error(`Image required for '${symbol}' token in 'images/single-assets/'`);
