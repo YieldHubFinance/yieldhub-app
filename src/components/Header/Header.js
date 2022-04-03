@@ -164,7 +164,7 @@ const LinkSidebar = ({ name, label, icon, classes }) => (
 );
 
 const getLinkUrl = name => {
-  return name === 'buy' ? getNetworkBuyUrl() : `https://${name}.beefy.finance`;
+  return name === 'buy' ? getNetworkBuyUrl() : `https://${name}.yieldhub.finance`;
 };
 
 export default Header;
