@@ -1,7 +1,7 @@
 import { getNetworkMulticall, launchpools } from '../../helpers/getNetworkData';
 import { useDispatch, useSelector } from 'react-redux';
 import { useCallback, useEffect, useMemo } from 'react';
-import { MooToken } from '../../configure/abi';
+import { YhToken } from '../../configure/abi';
 import { MultiCall } from 'eth-multicall';
 import Web3 from 'web3';
 import { getRpcUrl } from '../../../common/networkSetup';
@@ -54,7 +54,7 @@ const callGroups = {
 
 // contract name -> instance of the contract
 const callGroupContracts = {
-  tokenAddress: (web3, pool) => new web3.eth.Contract(MooToken, pool.tokenAddress),
+  tokenAddress: (web3, pool) => new web3.eth.Contract(YhToken, pool.tokenAddress),
   earnContractAddress: (web3, pool) =>
     new web3.eth.Contract(pool.earnContractAbi, pool.earnContractAddress),
 };

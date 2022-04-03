@@ -310,7 +310,7 @@ export default function StakePool(props) {
         <Grid item xs={12} sm={4}>
           <Typography className={classes.title}>{formatDecimals(poolStaked)}</Typography>
           <Typography className={classes.subtitle}>
-            {t('Stake-Total-Value-Locked', { mooToken: launchpool.token })}
+            {t('Stake-Total-Value-Locked', { yhToken: launchpool.token })}
           </Typography>
         </Grid>
         <Grid item xs={12} sm={4}>

@@ -431,7 +431,7 @@ const WithdrawSection = ({ pool, index, sharesBalance }) => {
               <ol>
                 <li>
                   {t('Vault-WithdrawScenarioRedeem', {
-                    mooToken: pool.earnedToken,
+                    yhToken: pool.earnedToken,
                     poolToken: pool.token,
                   })}
                 </li>
