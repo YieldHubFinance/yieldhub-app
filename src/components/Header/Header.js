@@ -2,7 +2,7 @@ import React, { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -14,7 +14,7 @@ import Close from '@material-ui/icons/Close';
 import WbSunny from '@material-ui/icons/WbSunny';
 import NightsStay from '@material-ui/icons/NightsStay';
 import { getNetworkBuyUrl } from '../../features/helpers/getNetworkData';
-import { Dialog, withStyles } from '@material-ui/core';
+import Dialog from '@material-ui/core/Dialog';
 import CustomButton from '../../components/CustomButtons/Button';
 import styles from './styles';
 
@@ -164,7 +164,7 @@ const LinkSidebar = ({ name, label, icon, classes }) => (
 );
 
 const getLinkUrl = name => {
-  return name === 'buy' ? getNetworkBuyUrl() : `https://${name}.beefy.finance`;
+  return name === 'buy' ? getNetworkBuyUrl() : `https://${name}.yieldhub.finance`;
 };
 
 export default Header;

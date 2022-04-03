@@ -1,7 +1,6 @@
 import { connectors } from 'web3modal';
 import { indexBy } from './utils';
 import WalletConnectProvider from '@walletconnect/web3-provider';
-import { DeFiConnector } from 'deficonnect';
 import WalletLink from 'walletlink';
 import { CloverConnector } from '@clover-network/clover-connector';
 import { allNetworks } from '../../network';
@@ -1040,33 +1039,6 @@ export const getNetworkConnectors = t => {
           injected: {
             display: {
               name: 'MetaMask',
-            },
-          },
-          'custom-cdc': {
-            display: {
-              logo: require(`images/wallets/crypto.png`),
-              name: 'Crypto.com',
-              description: t('Crypto.com | Wallet Extension'),
-            },
-            options: {
-              supportedChainIds: [25],
-              rpc: {
-                25: 'https://evm-cronos.crypto.org/', // cronos mainet
-              },
-              pollingInterval: 15000,
-            },
-            package: DeFiConnector,
-            connector: async (packageConnector, options) => {
-              const connector = new packageConnector({
-                name: 'Cronos',
-                supprtedChainTypes: ['eth'],
-                supportedChainTypes: ['eth'],
-                eth: options,
-                cosmos: null,
-              });
-              await connector.activate();
-
-              return connector.getProvider();
             },
           },
           'custom-wc-cronos': {

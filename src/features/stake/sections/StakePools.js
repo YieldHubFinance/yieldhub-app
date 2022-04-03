@@ -1,11 +1,16 @@
 import React, { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Accordion, AccordionDetails, Grid, makeStyles, Typography } from '@material-ui/core';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import Disclaimer from 'components/Disclaimer/Disclaimer';
 import styles from './styles/list';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { ToggleButton, ToggleButtonGroup } from '@material-ui/lab';
+import ToggleButton from '@material-ui/lab/ToggleButton';
+import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import { useLaunchpoolUpdates } from '../redux/hooks';
 import { launchpools, appNetworkId } from '../../helpers/getNetworkData';
 import { StakePoolsPool } from './StakePoolsPool';
@@ -144,30 +149,32 @@ export default function StakePools() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                A mooToken can be seen as a receipt that you get when depositing into any Beefy vault.
-                This is a fully automatic process. For example, you receive ‘mooBIFI’ tokens from
-                depositing $BIFI into the Beefy Maxi vault. These mooTokens do not 1:1 represent the
-                token amount initially deposited but it does represent the value of your share in the
-                vault. As a vault generates profit, the amount of mooTokens in your wallet remain
-                constant while the underlying invested token amount in the vault increases. Whenever
-                you want to withdraw the tokens that are staked for you in the vault, you need your
-                receipt (mooTokens) which you hand in to redeem the deposited tokens + yield.
-                Beefy.Finance users should hold on tightly to the mooTokens i.e. deposit receipts
-                and not sell or exchange them to strangers or you will lose ownership of your staked
-                assets in the vault.
+                A mooToken can be seen as a receipt that you get when depositing into any Beefy
+                vault. This is a fully automatic process. For example, you receive ‘mooBIFI’ tokens
+                from depositing $BIFI into the Beefy Maxi vault. These mooTokens do not 1:1
+                represent the token amount initially deposited but it does represent the value of
+                your share in the vault. As a vault generates profit, the amount of mooTokens in
+                your wallet remain constant while the underlying invested token amount in the vault
+                increases. Whenever you want to withdraw the tokens that are staked for you in the
+                vault, you need your receipt (mooTokens) which you hand in to redeem the deposited
+                tokens + yield. Beefy.Finance users should hold on tightly to the mooTokens i.e.
+                deposit receipts and not sell or exchange them to strangers or you will lose
+                ownership of your staked assets in the vault.
               </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion square expanded={expanded === 'faq-8'} onChange={handleChange('faq-8')}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>Why do I have less mooToken than the amount of tokens I deposited?</Typography>
+              <Typography>
+                Why do I have less mooToken than the amount of tokens I deposited?
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
                 The mooTokens represent the share of the vault the user has. As the vault generates
                 profit, the deposited token amount in the vault increases while the amount of shares
                 (mooTokens) in your wallet remain constant. If you deposit at a time when the vault
-                has been operating for a while, the ratio between deposited tokens and mooTokens 
+                has been operating for a while, the ratio between deposited tokens and mooTokens
                 will be off from the initial 1:1 ratio, and continues to diverge from it.
               </Typography>
             </AccordionDetails>

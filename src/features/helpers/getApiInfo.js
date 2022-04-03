@@ -1,4 +1,4 @@
-export const apiUrl = process.env.REACT_APP_API_URL || 'https://api.beefy.finance';
+export const apiUrl = process.env.REACT_APP_API_URL || 'https://api.yieldhub.finance';
 
 // Time-based cache buster
 export const getApiCacheBuster = () => {

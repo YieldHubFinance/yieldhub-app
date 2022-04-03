@@ -1,8 +1,10 @@
 import React, { memo, useCallback } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Dialog, Grid, IconButton, withStyles } from '@material-ui/core';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
+import Dialog from '@material-ui/core/Dialog';
+import Grid from '@material-ui/core/Grid';
+import IconButton from '@material-ui/core/IconButton';
 import { useTranslation } from 'react-i18next';
-import { Close } from '@material-ui/icons';
+import Close from '@material-ui/icons/Close';
 import { getSingleAssetSrc } from '../../features/helpers/getSingleAssetSrc';
 import { allNetworks } from '../../network';
 

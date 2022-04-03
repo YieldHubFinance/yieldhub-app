@@ -1,4 +1,4 @@
-import { fade } from '@material-ui/core';
+import { fade } from '@material-ui/core/styles';
 
 export default theme => ({
   box: {

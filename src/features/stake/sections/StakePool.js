@@ -21,16 +21,13 @@ import {
   useUserStaked,
 } from '../redux/hooks';
 
-import {
-  Avatar,
-  Box,
-  Dialog,
-  Grid,
-  makeStyles,
-  TextField,
-  Typography,
-  useTheme,
-} from '@material-ui/core';
+import Avatar from '@material-ui/core/Avatar';
+import Box from '@material-ui/core/Box';
+import Dialog from '@material-ui/core/Dialog';
+import Grid from '@material-ui/core/Grid';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+import Typography from '@material-ui/core/Typography';
 
 import TwitterIcon from '@material-ui/icons/Twitter';
 import TelegramIcon from '@material-ui/icons/Telegram';

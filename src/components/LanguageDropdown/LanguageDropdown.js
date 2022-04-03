@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Button, Menu, MenuItem } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 import { supportedLanguages } from '../../i18n';
 import { useTranslation } from 'react-i18next';
 import styles from './styles';
