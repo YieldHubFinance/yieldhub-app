@@ -5,16 +5,15 @@ import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
 import Grid from '@material-ui/core/Grid';
 
 import TVLLoader from './TVLLoader/TVLLoader';
-import NetworksToggle from 'components/NetworksToggle/NetworksToggle';
 import { useConnectWallet } from 'features/home/redux/hooks';
 import { useFetchBalances, useFetchVaultsData, useFetchApys } from '../../redux/hooks';
 import VisiblePools from '../VisiblePools/VisiblePools';
 import styles from './styles';
 import { usePoolsTvl, useUserTvl } from '../../hooks/usePoolsTvl';
+import { runOnInterval } from 'common/background';
 import { formatGlobalTvl } from 'features/helpers/format';
 import { useFetchBifibuyback } from 'features/vault/redux/fetchBifiBuyback';
 import { getNetworkFriendlyName } from '../../../helpers/getNetworkData';
-import { getSingleAssetSrc } from 'features/helpers/getSingleAssetSrc';
 
 const FETCH_INTERVAL_MS = 15 * 1000;
 
@@ -34,15 +33,15 @@ export default function Pools() {
 
   useEffect(() => {
     fetchApys();
-    const id = setInterval(fetchApys, FETCH_INTERVAL_MS);
-    return () => clearInterval(id);
+    return runOnInterval(fetchApys, FETCH_INTERVAL_MS);
   }, [fetchApys]);
 
+  /**
   useEffect(() => {
-    // fetchBifibuyback();
-    // const id = setInterval(fetchBifibuyback, FETCH_INTERVAL_MS);
-    // return () => clearInterval(id);
+    fetchBifibuyback();
+    return runOnInterval(fetchBifibuyback, FETCH_INTERVAL_MS);
   }, [fetchBifibuyback]);
+  */
 
   useEffect(() => {
     const fetch = () => {
@@ -55,9 +54,7 @@ export default function Pools() {
     };
     fetch();
 
-    const id = setInterval(fetch, FETCH_INTERVAL_MS);
-    return () => clearInterval(id);
-
+    return runOnInterval(fetch, FETCH_INTERVAL_MS);
     // Adding tokens and pools to this dep list, causes an endless loop, DDoSing the api
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [address, web3, fetchBalances, fetchVaultsData]);
