@@ -24,7 +24,7 @@
   "Vault-DepositScenario": "Depozyt spowoduje:",
   "Vault-DepositScenarioSwap": "W celu zbilansowania pary walutowej, wymień {{swapIn}} na {{swapOut}} (±{{slippageTolerance}} opcjonalny poślizg cenowy i opłata za depozyt)",
   "Vault-DepositScenarioAddLiquidity": "Dodaj płynność, aby otrzymać {{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "Zdeponowanie {{poolToken}} w skarbcu Beefy",
+  "Vault-DepositScenarioDepositToVault": "Zdeponowanie {{poolToken}} w skarbcu YieldHub",
   "Vault-DepositScenarioReturnDust": "Zwrot niewykorzystanych, śladowych ilości {{tokenA}} i {{tokenB}} do portfela",
   "Vault-Withdrawing": "Wypłacanie...",
   "Vault-WithdrawButton": "Wypłata",

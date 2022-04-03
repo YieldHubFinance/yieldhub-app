@@ -34,7 +34,7 @@
   "Vault-DepositScenario": "В результате ввода:",
   "Vault-DepositScenarioSwap": "Чтобы сбалансировать пару ликвидности, {{swapIn}} будут обменяны на {{swapOut}} (± уплачена комиссия за ввод и проскальзывание {{slippageTolerance}}, если таковые имеются)",
   "Vault-DepositScenarioAddLiquidity": "Ликвидность будет использована для получения {{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "Полученные {{poolToken}} будут введены в хранилище Beefy",
+  "Vault-DepositScenarioDepositToVault": "Полученные {{poolToken}} будут введены в хранилище YieldHub",
   "Vault-DepositScenarioReturnDust": "Неиспользованные остатки {{tokenA}} и {{tokenB}} будут возвращены на ваш кошелек",
   "Vault-Withdrawing": "Производится вывод...",
   "Vault-WithdrawButton": "Вывести",

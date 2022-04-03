@@ -34,7 +34,7 @@
   "Vault-DepositScenario": "Deposit akan mengakibatkan:",
   "Vault-DepositScenarioSwap": "Untuk mengimbangi satu pasangan liquidity, {{swapIn}} akan ditukar kepada {{swapOut}} (±{{slippageTolerance}} gelinciran dan bayaran deposit, jika ada)",
   "Vault-DepositScenarioAddLiquidity": "Liquidity ditambah untuk menerima {{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "Deposit {{poolToken}} yang diterima ke dalam Beefy vault",
+  "Vault-DepositScenarioDepositToVault": "Deposit {{poolToken}} yang diterima ke dalam YieldHub vault",
   "Vault-DepositScenarioReturnDust": "Sedikit daripada jumlah {{tokenA}} dan {{tokenB}} yang tidak digunakan akan dikembalikan ke dompet anda",
   "Vault-Withdrawing": "Mengeluarkan...",
   "Vault-WithdrawButton": "Keluar",

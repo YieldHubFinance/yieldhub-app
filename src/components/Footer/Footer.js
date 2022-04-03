@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className={classes.root}>
       {/* <a
-        href="https://docs.beefy.finance"
+        href="https://docs.yieldhub.finance"
         target="_blank"
         rel="noopener noreferrer"
         className={classes.link}

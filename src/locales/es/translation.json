@@ -21,7 +21,7 @@
   "Vault-DepositScenario": "El depósito resultará en:",
   "Vault-DepositScenarioSwap": "Para balancear un par de liquidez, swapea {{swapIn}} por {{swapOut}} (±{{slippageTolerance}} slippage y comisión de depósito, si hubiera)",
   "Vault-DepositScenarioAddLiquidity": "Agrega liquidez para recibir {{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "Depósito de {{poolToken}} recibido en la bóveda de Beefy",
+  "Vault-DepositScenarioDepositToVault": "Depósito de {{poolToken}} recibido en la bóveda de YieldHub",
   "Vault-DepositScenarioReturnDust": "Devolver las cantidades no usadas de {{tokenA}} y {{tokenB}} a tu billetera",
   "Vault-Withdrawing": "Retirando...",
   "Vault-WithdrawButton": "Retirar",

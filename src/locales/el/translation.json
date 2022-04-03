@@ -21,7 +21,7 @@
   "Vault-DepositScenario": "Η κατάθεση θα έχει ως αποτέλεσμα:",
   "Vault-DepositScenarioSwap": "Για την εξισορρόπηση ενός ζευγαριού ρευστότητας, μετατροπή του {{swapIn}} για {{swapOut}} (±{{slippageTolerance}} ολίσθηση και τέλη ανάληψης, εάν υπάρχουν)",
   "Vault-DepositScenarioAddLiquidity": "Παροχή ρευστότητας για παραλαβή {{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "Κατάθεση ληφθέντων {{poolToken}} στο χρηματοκιβώτιο του Beefy",
+  "Vault-DepositScenarioDepositToVault": "Κατάθεση ληφθέντων {{poolToken}} στο χρηματοκιβώτιο του YieldHub",
   "Vault-DepositScenarioReturnDust": "Επιστροφή αχρησιμοποίητου ίχνους ποσότητας του {{tokenA}} και {{tokenB}} στο πορτοφόλι σας",
   "Vault-Withdrawing": "Ανάληψη...",
   "Vault-WithdrawButton": "Ανάληψη",

@@ -23,7 +23,7 @@
   "Vault-DepositScenario": "Ang magiging resulta ng dineposito:",
   "Vault-DepositScenarioSwap": "Para sa maibalanse ang liquidity pair, pagpalitin ang {{swapIn}} sa {{swapOut}} (±{{slippageTolerance}} slippage at deposit fee, kung meron)",
   "Vault-DepositScenarioAddLiquidity": "Magdagdag ng liquidity para makakuha ng {{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "Naideposito na ang {{poolToken}} sa Beefy vault",
+  "Vault-DepositScenarioDepositToVault": "Naideposito na ang {{poolToken}} sa YieldHub vault",
   "Vault-DepositScenarioReturnDust": "Ibalik ang hindi nagamit na trace amount ng {{tokenA}} at {{tokenB}} sa iyong wallet",
   "Vault-Withdrawing": "Withdrawing...",
   "Vault-WithdrawButton": "Withdraw",

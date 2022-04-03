@@ -34,7 +34,7 @@
   "Vault-DepositScenario": "存款将会导致：",
   "Vault-DepositScenarioSwap": "为了平衡一对流动性对，用{{swapIn}}换取{{swapOut}}(可能存在±{{slippageTolerance}}滑点和存款费用)",
   "Vault-DepositScenarioAddLiquidity": "添加流动性以收到{{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "将收到的{{poolToken}}存入Beefy金库",
+  "Vault-DepositScenarioDepositToVault": "将收到的{{poolToken}}存入YieldHub金库",
   "Vault-DepositScenarioReturnDust": "将未使用过的微量的{{tokenA}}和{{tokenB}}返还到您的钱包",
   "Vault-Withdrawing": "提出中...",
   "Vault-WithdrawButton": "提出",

@@ -24,7 +24,7 @@
   "Vault-DepositScenario": "O depósito irá resultar em:",
   "Vault-DepositScenarioSwap": "Para balancear um par de liquidez, troque {{swapIn}} por {{swapOut}} (±{{slippageTolerance}} de spread e taxa de depósito, se houver)",
   "Vault-DepositScenarioAddLiquidity": "Adicione liquidez para receber {{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "Recebido o depósito de {{poolToken}} no cofre Beefy",
+  "Vault-DepositScenarioDepositToVault": "Recebido o depósito de {{poolToken}} no cofre YieldHub",
   "Vault-DepositScenarioReturnDust": "Retorne montante não utilizado de {{tokenA}} e {{tokenB}} para sua carteira",
   "Vault-Withdrawing": "Retirando...",
   "Vault-WithdrawButton": "Retirar",

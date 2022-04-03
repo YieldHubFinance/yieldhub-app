@@ -21,7 +21,7 @@
   "Vault-DepositScenario": "Die Einzahlung führt zu:",
   "Vault-DepositScenarioSwap": "Um ein Liquiditätspaar auszugleichen, wechseln von {{swapIn}} auf {{swapOut}} (±{{slippageTolerance}} Slippage und Einzahlungsgebühr, falls vorhanden)",
   "Vault-DepositScenarioAddLiquidity": "{{poolToken}} kaufen",
-  "Vault-DepositScenarioDepositToVault": "Erhaltenen {{poolToken}} im Beefy Vault einzahlen",
+  "Vault-DepositScenarioDepositToVault": "Erhaltenen {{poolToken}} im YieldHub Vault einzahlen",
   "Vault-DepositScenarioReturnDust": "Ungenutzte Restbeträge von {{tokenA}} und {{tokenB}} in Ihr Wallet zurück übertragen",
   "Vault-Withdrawing": "Auszahlen...",
   "Vault-WithdrawButton": "Auszahlen",

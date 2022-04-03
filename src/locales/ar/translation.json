@@ -23,7 +23,7 @@
   "Vault-DepositScenario": "سينتج عن الإيداع:",
   "Vault-DepositScenarioSwap": "لرصيد زوج السيولهلموازنة زوج السيولة ، استبدل {{swapIn}} بـ {{swapOut}} (± {{slippageTolerance}} رسوم الانزلاق والإيداع ، إن وجدت)",
   "Vault-DepositScenarioAddLiquidity": "أضف سيولة لتحصل على {{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "تم استلام الإيداع {{poolToken}} في خزينة Beefy",
+  "Vault-DepositScenarioDepositToVault": "تم استلام الإيداع {{poolToken}} في خزينة YieldHub",
   "Vault-DepositScenarioReturnDust": "أعد كميات التتبع غير المستخدمة من {{tokenA}} و {{tokenB}} إلى محفظتك",
   "Vault-Withdrawing": "جاري الإستخراج...",
   "Vault-WithdrawButton": "إستخراج",

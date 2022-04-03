@@ -61,7 +61,7 @@ export default function StakePools() {
         <Grid className={classes.faq} item xs={12} lg={9}>
           <Accordion square expanded={expanded === 'faq-1'} onChange={handleChange('faq-1')}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>How do I use Beefy Launchpool?</Typography>
+              <Typography>How do I use YieldHub Launchpool?</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -72,11 +72,11 @@ export default function StakePools() {
                 />
                 Look for a boosted partner Vault in our main app and stake the tokens that are asked
                 for in the vault. You will get a “receipt” called mooToken in your wallet. Proceed
-                to the related partner Launchpool vault here on the Beefy Launchpool site and enter
-                the corresponding vault (or press the shortcut on the main vault page called Boost).
-                The vault will ask for you to stake yourmooToken “receipts''. Stake these mooTokens
-                and you are all done, you can easily come back here and follow your earned partner
-                tokens and withdraw at any time.
+                to the related partner Launchpool vault here on the YieldHub Launchpool site and
+                enter the corresponding vault (or press the shortcut on the main vault page called
+                Boost). The vault will ask for you to stake yourmooToken “receipts''. Stake these
+                mooTokens and you are all done, you can easily come back here and follow your earned
+                partner tokens and withdraw at any time.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -149,15 +149,15 @@ export default function StakePools() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                A mooToken can be seen as a receipt that you get when depositing into any Beefy
+                A mooToken can be seen as a receipt that you get when depositing into any YieldHub
                 vault. This is a fully automatic process. For example, you receive ‘mooBIFI’ tokens
-                from depositing $BIFI into the Beefy Maxi vault. These mooTokens do not 1:1
+                from depositing $BIFI into the YieldHub Maxi vault. These mooTokens do not 1:1
                 represent the token amount initially deposited but it does represent the value of
                 your share in the vault. As a vault generates profit, the amount of mooTokens in
                 your wallet remain constant while the underlying invested token amount in the vault
                 increases. Whenever you want to withdraw the tokens that are staked for you in the
                 vault, you need your receipt (mooTokens) which you hand in to redeem the deposited
-                tokens + yield. Beefy.Finance users should hold on tightly to the mooTokens i.e.
+                tokens + yield. YieldHub.Finance users should hold on tightly to the mooTokens i.e.
                 deposit receipts and not sell or exchange them to strangers or you will lose
                 ownership of your staked assets in the vault.
               </Typography>
@@ -185,13 +185,13 @@ export default function StakePools() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                mooBIFI is the token you receive from depositing $BIFI into the Beefy Maxi vault.
+                mooBIFI is the token you receive from depositing $BIFI into the YieldHub Maxi vault.
                 These mooTokens do not 1:1 represent the token amount initially deposited but it
-                does represent the value of your share in the vault. The Beefy Maxi vault gathers a
-                performance fee from every Beefy Vault when they are harvested, and uses it to buy
-                more $BIFI and redeposit in the vault. The more profit the Beefy generates, the more
-                $BIFI you'll own in the vault. Do NOT sell your mooTokens, or else you lose access
-                to your deposit.
+                does represent the value of your share in the vault. The YieldHub Maxi vault gathers
+                a performance fee from every YieldHub Vault when they are harvested, and uses it to
+                buy more $BIFI and redeposit in the vault. The more profit the YieldHub generates,
+                the more $BIFI you'll own in the vault. Do NOT sell your mooTokens, or else you lose
+                access to your deposit.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -201,9 +201,9 @@ export default function StakePools() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Yes! These partner vaults are hosted by Beefy and are completely safe. Beefy has
-                gotten tokens from our partners and uses our own vaults for the reward. Those
-                mooTokens your stake doesn’t leave Beefy.
+                Yes! These partner vaults are hosted by YieldHub and are completely safe. YieldHub
+                has gotten tokens from our partners and uses our own vaults for the reward. Those
+                mooTokens your stake doesn’t leave YieldHub.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -231,9 +231,9 @@ export default function StakePools() {
             <AccordionDetails>
               <Typography>
                 That’s because APR and APY show two different things. APR means “Annual Percentage
-                Rate” and is a fixed rate. Beefy shows APR by dividing the annual yield into 365
+                Rate” and is a fixed rate. YieldHub shows APR by dividing the annual yield into 365
                 days and presents that to you as “Daily”. APY on the other hand means “Annual
-                percentage yield” which is when you take the daily yield and compound it. Beefy
+                percentage yield” which is when you take the daily yield and compound it. YieldHub
                 compounds your rewards automatically most of the time multiple times a day, this
                 makes the APY much higher than a yearly APR would be.
               </Typography>
@@ -261,30 +261,16 @@ export default function StakePools() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                When partnering with a certain project, Beefy always tries to make an overall check
-                of the project to get a sense of its sincerity and safety. Before adding vaults that
-                are hosted by the partnering project, we also try to look for vulnerabilities in the
-                code. Despite all this, we can never be 100% sure about a partner, hence it’s up to
-                you to make sure that the partnering project is a project that you want to support.
-                Beefy cannot, and will not take any responsibility for your personal actions.
+                When partnering with a certain project, YieldHub always tries to make an overall
+                check of the project to get a sense of its sincerity and safety. Before adding
+                vaults that are hosted by the partnering project, we also try to look for
+                vulnerabilities in the code. Despite all this, we can never be 100% sure about a
+                partner, hence it’s up to you to make sure that the partnering project is a project
+                that you want to support. YieldHub cannot, and will not take any responsibility for
+                your personal actions.
               </Typography>
             </AccordionDetails>
           </Accordion>
-          {appNetworkId === 56 ? (
-            <Accordion square expanded={expanded === 'faq-15'} onChange={handleChange('faq-15')}>
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                <Typography>How to earn free BNB indefinitely?</Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography>
-                  Buy our own token $BIFI, and stake it here in the BIFI Gov vault and you will earn
-                  part of every harvest done on all our over 200 vaults, every day.
-                </Typography>
-              </AccordionDetails>
-            </Accordion>
-          ) : (
-            ''
-          )}
         </Grid>
         <Grid item xs={12}>
           <Disclaimer />

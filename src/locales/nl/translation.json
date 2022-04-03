@@ -21,7 +21,7 @@
   "Vault-DepositScenario": "Storting resulteert in:",
   "Vault-DepositScenarioSwap": "Voor de juiste verhouding, verwissel {{swapIn}} voor {{swapOut}} (±{{slippageTolerance}} afwijking en stort kosten, indien van toepassing)",
   "Vault-DepositScenarioAddLiquidity": "Voeg liquiditeit toe om {{poolToken}} te ontvangen",
-  "Vault-DepositScenarioDepositToVault": "Stort ontvangen {{poolToken}} in Beefy's kluis",
+  "Vault-DepositScenarioDepositToVault": "Stort ontvangen {{poolToken}} in YieldHub's kluis",
   "Vault-DepositScenarioReturnDust": "Retourneer ongebruikte hoeveelheden van {{tokenA}} en {{tokenB}} naar je wallet",
   "Vault-Withdrawing": "Bezig met opnemen...",
   "Vault-WithdrawButton": "Opnemen",

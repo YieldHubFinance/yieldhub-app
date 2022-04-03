@@ -34,7 +34,7 @@
   "Vault-DepositScenario": "Deposit will result in:",
   "Vault-DepositScenarioSwap": "To balance a liquidity pair, swap {{swapIn}} for {{swapOut}} (±{{slippageTolerance}} slippage and deposit fee, if any)",
   "Vault-DepositScenarioAddLiquidity": "Add liquidity to receive {{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "Deposit received {{poolToken}} into Beefy vault",
+  "Vault-DepositScenarioDepositToVault": "Deposit received {{poolToken}} into YieldHub vault",
   "Vault-DepositScenarioReturnDust": "Return unused trace amounts of {{tokenA}} and {{tokenB}} to your wallet",
   "Vault-Withdrawing": "Withdrawing...",
   "Vault-WithdrawButton": "Withdraw",
@@ -165,19 +165,19 @@
     {
       "title": "How it works",
       "content": [
-        "Beefy contracts deposit tokens on your behalf, to underlying platforms, for example Pancakeswap, TraderJoe, or Spookyswap. If one of Beefy’s smart contracts fails (for example our vault contract, or the strategy contract) and you were paying for coverage, InsurAce will cover your loss.",
+        "YieldHub contracts deposit tokens on your behalf, to underlying platforms, for example Pancakeswap, TraderJoe, or Spookyswap. If one of YieldHub’s smart contracts fails (for example our vault contract, or the strategy contract) and you were paying for coverage, InsurAce will cover your loss.",
         "Contrarily if the smart contract that fails belongs to the underlying platform (Pancakeswap, Traderjoe, Spookyswap) your deposits won’t be covered."
       ]
     },
     {
       "title": "What is the premium?",
       "content": [
-        "2.9% annually. Use our custom Beefy link to enjoy a 10% discount (paid in Insur Token)."
+        "2.9% annually. Use our custom YieldHub link to enjoy a 10% discount (paid in Insur Token)."
       ]
     }
   ],
   "InsurAce-Button": "Insure Vaults",
-  "V2Banner-Title": "This app will soon be replaced with Beefy’s updated v2 interface.",
+  "V2Banner-Title": "This app will soon be replaced with YieldHub’s updated v2 interface.",
   "V2Banner-Text": "No user actions are required. You can try the new version now.",
   "V2Banner-Button": "Try the Beta"
 }

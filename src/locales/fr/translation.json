@@ -21,7 +21,7 @@
   "Vault-DepositScenario": "Processus de dépot:",
   "Vault-DepositScenarioSwap": "Pour équilibrer la paire, échange {{swapIn}} pour {{swapOut}} (±{{slippageTolerance}} slippage et frais de dépot, si applicable",
   "Vault-DepositScenarioAddLiquidity": "Achat de {{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "Dépot de {{poolToken}} dans le coffre Beefy",
+  "Vault-DepositScenarioDepositToVault": "Dépot de {{poolToken}} dans le coffre YieldHub",
   "Vault-DepositScenarioReturnDust": "Retour des poussières de {{tokenA}} et {{tokenB}} dans votre portefeuille",
   "Vault-Withdrawing": "Retrait en cours...",
   "Vault-WithdrawButton": "Retrait",

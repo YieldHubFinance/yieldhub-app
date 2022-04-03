@@ -23,7 +23,7 @@
   "Vault-DepositScenario": "Yatırma gerçekleştirilirken:",
   "Vault-DepositScenarioSwap": "Likit eşini dengelemek için {{swapOut}} karşılığında {{swapIn}} takas et (± çekme harcı ve {{slippageTolerance}} kayma, eğer varsa)",
   "Vault-DepositScenarioAddLiquidity": "{{poolToken}} almak için likit ekle",
-  "Vault-DepositScenarioDepositToVault": "Alınan {{poolToken}} tokeni Beefy kasasına yatır",
+  "Vault-DepositScenarioDepositToVault": "Alınan {{poolToken}} tokeni YieldHub kasasına yatır",
   "Vault-DepositScenarioReturnDust": "Kullanılmamış {{tokenA}} ve {{tokenB}} miktarını cüzdanınıza geri iade et",
   "Vault-Withdrawing": "Çekiliyor...",
   "Vault-WithdrawButton": "Çek",
