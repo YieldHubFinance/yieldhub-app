@@ -277,7 +277,7 @@ export const getNetworkTokens = () => {
       return telosAddressBook.tokens; // TODO add tokens
     default:
       throw new Error(
-        `Create address book for chainId(${chainId}) first. Check out https://github.com/beefyfinance/address-book`
+        `Create address book for chainId(${chainId}) first. Check out https://github.com/YieldHubFinance/address-book`
       );
   }
 };

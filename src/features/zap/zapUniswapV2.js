@@ -50,7 +50,7 @@ export const getEligibleZap = pool => {
   });
 
   for (const symbol in missingTokenSymbols) {
-    console.error('Beefy: token missing in the tokenlist:', symbol);
+    console.error('YieldHub: token missing in the tokenlist:', symbol);
   }
 
   const pairHasBurnToken = tokenASymbol in burnTokens || tokenBSymbol in burnTokens;

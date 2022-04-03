@@ -26,7 +26,7 @@
   "Vault-BifiBuyback": "BIFI Buyback {{amount}}/day",
   "Vault-DepositButton": "Deposit",
   "Vault-DepositButtonAll": "Deposit All",
-  "Vault-DepositTokensNote": "You will receive {{mooToken}} token as a receipt for your deposited {{assetToken}} assets. This token is needed to withdraw your {{assetToken}}, do not trade or transfer {{mooToken}} to strangers!",
+  "Vault-DepositTokensNote": "You will receive {{yhToken}} token as a receipt for your deposited {{assetToken}} assets. This token is needed to withdraw your {{assetToken}}, do not trade or transfer {{yhToken}} to strangers!",
   "Vault-DepositAndWithdrawFee": "Deposit fee: {{depositFee}}, Withdrawal fee: {{withdrawalFee}}",
   "Vault-Deposited": "Deposited",
   "Vault-DepositSuccess": "Deposit success",
@@ -34,7 +34,7 @@
   "Vault-DepositScenario": "Deposit will result in:",
   "Vault-DepositScenarioSwap": "To balance a liquidity pair, swap {{swapIn}} for {{swapOut}} (±{{slippageTolerance}} slippage and deposit fee, if any)",
   "Vault-DepositScenarioAddLiquidity": "Add liquidity to receive {{poolToken}}",
-  "Vault-DepositScenarioDepositToVault": "Deposit received {{poolToken}} into Beefy vault",
+  "Vault-DepositScenarioDepositToVault": "Deposit received {{poolToken}} into YieldHub vault",
   "Vault-DepositScenarioReturnDust": "Return unused trace amounts of {{tokenA}} and {{tokenB}} to your wallet",
   "Vault-Withdrawing": "Withdrawing...",
   "Vault-WithdrawButton": "Withdraw",
@@ -43,7 +43,7 @@
   "Vault-WithdrawSuccess": "Withdrawal success",
   "Vault-WithdrawError": "Withdrawal error: {{error}}",
   "Vault-WithdrawScenario": "Withdrawal will result in:",
-  "Vault-WithdrawScenarioRedeem": "Redeem {{mooToken}} token for {{poolToken}}",
+  "Vault-WithdrawScenarioRedeem": "Redeem {{yhToken}} token for {{poolToken}}",
   "Vault-WithdrawScenarioRemoveLiquidity": "Remove liquidity from {{poolToken}} to receive {{tokenA}} and {{tokenB}}",
   "Vault-WithdrawScenarioSwap": "Swap estimated {{swapIn}} for {{swapOut}} (±{{slippageTolerance}} slippage and withdrawal fee, if any)",
   "Vault-WithdrawScenarioTotal": "Transfer estimated {{totalOut}} to your wallet",
@@ -143,7 +143,7 @@
   "Stake-BoostedBy": "Boosted by {{name}}",
   "Stake-Button-Back": "Back",
   "Stake-Pool-Retired": "The pool has finished, withdraw your funds.",
-  "Stake-Total-Value-Locked": "Total {{mooToken}} Staked",
+  "Stake-Total-Value-Locked": "Total {{yhToken}} Staked",
   "Stake-Your-Pool": "Your Pool",
   "Stake-Current-Daily": "Current Daily Rate",
   "Add-Liquidity": "Add Liquidity",
@@ -165,19 +165,19 @@
     {
       "title": "How it works",
       "content": [
-        "Beefy contracts deposit tokens on your behalf, to underlying platforms, for example Pancakeswap, TraderJoe, or Spookyswap. If one of Beefy’s smart contracts fails (for example our vault contract, or the strategy contract) and you were paying for coverage, InsurAce will cover your loss.",
+        "YieldHub contracts deposit tokens on your behalf, to underlying platforms, for example Pancakeswap, TraderJoe, or Spookyswap. If one of YieldHub’s smart contracts fails (for example our vault contract, or the strategy contract) and you were paying for coverage, InsurAce will cover your loss.",
         "Contrarily if the smart contract that fails belongs to the underlying platform (Pancakeswap, Traderjoe, Spookyswap) your deposits won’t be covered."
       ]
     },
     {
       "title": "What is the premium?",
       "content": [
-        "2.9% annually. Use our custom Beefy link to enjoy a 10% discount (paid in Insur Token)."
+        "2.9% annually. Use our custom YieldHub link to enjoy a 10% discount (paid in Insur Token)."
       ]
     }
   ],
   "InsurAce-Button": "Insure Vaults",
-  "V2Banner-Title": "This app will soon be replaced with Beefy’s updated v2 interface.",
+  "V2Banner-Title": "This app will soon be replaced with YieldHub’s updated v2 interface.",
   "V2Banner-Text": "No user actions are required. You can try the new version now.",
   "V2Banner-Button": "Try the Beta"
 }

@@ -454,7 +454,7 @@ const DepositSection = ({ pool }) => {
 
       {vaultFee ? <h3 className={classes.subtitle}>{vaultFee}</h3> : ''}
       <p className={classes.note}>
-        {t('Vault-DepositTokensNote', { mooToken: pool.earnedToken, assetToken: pool.token })}
+        {t('Vault-DepositTokensNote', { yhToken: pool.earnedToken, assetToken: pool.token })}
       </p>
     </Grid>
   );
