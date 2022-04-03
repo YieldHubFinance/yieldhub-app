@@ -21,7 +21,6 @@
     "blockchain-addressbook": "^0.22.0",
     "classnames": "^2.2.6",
     "connected-react-router": "^6.8.0",
-    "deficonnect": "^1.1.14",
     "eth-multicall": "^1.3.13",
     "history": "^5.0.0",
     "i18next": "^19.8.2",

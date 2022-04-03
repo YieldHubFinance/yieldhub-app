@@ -107,7 +107,7 @@ const PoolTitle = ({
             >
               <span>{t('Remove-Liquidity')}</span>
             </a>
-          ): (
+          ) : (
             ''
           )}
           {mintTokenUrl ? (

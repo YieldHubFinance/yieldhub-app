@@ -5,7 +5,8 @@ import styles from './styles';
 import { formatApy } from '../../../../helpers/format';
 import { isNaN } from '../../../../helpers/bignumber';
 import LabeledStat from '../LabeledStat/LabeledStat';
-import { Fade, Tooltip } from '@material-ui/core';
+import Fade from '@material-ui/core/Fade';
+import Tooltip from '@material-ui/core/Tooltip';
 import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles(styles);
