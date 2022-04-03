@@ -46,7 +46,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "IMAGE_INLINE_SIZE_LIMIT=100 DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "build": "react-scripts build",
     "validate": "node ./scripts/validatePools.js",
     "launchpool": "node ./scripts/launchpool.js",
     "test": "react-scripts test",
