@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . ./
 RUN apk add --no-cache git
 RUN yarn install --frozen-lockfile --production
-RUN yarn build-production
+RUN yarn build
 
 # server environment
 FROM nginx:alpine

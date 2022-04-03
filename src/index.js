@@ -1,11 +1,11 @@
 import network from 'network';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Root from './Root';
+import Root from './Root.js';
 
 import 'assets/scss/material-kit-pro-react.scss?v=1.9.0';
 import './styles/index.scss';
-import './i18n';
+import './i18n.js';
 
 if (network) {
   ReactDOM.render(<Root />, document.getElementById('root'));
