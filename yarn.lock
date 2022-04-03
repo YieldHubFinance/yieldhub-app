@@ -2741,10 +2741,10 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-"@yieldhubfinance/blockchain-addressbook@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@yieldhubfinance/blockchain-addressbook/-/blockchain-addressbook-0.3.0.tgz#067ac3ad32c589e949c416c8617aec2ba08cd369"
-  integrity sha512-xAQ8v7EtqDd8QRMSHcHaZrRspUNOg7/yi9DdM0PKOOAkiJ+p0alzGoAXRMo2OH/VI6Jp46Tsu2n2vcokKyaoAw==
+"@yieldhubfinance/blockchain-addressbook@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@yieldhubfinance/blockchain-addressbook/-/blockchain-addressbook-0.4.0.tgz#223cf75f4ddf2bcc506fc7adf29e3813f37296bf"
+  integrity sha512-p+prUhHitSYGpJS21vCc3XZuFLoNBJxBhKUgk7GHW2jOD9kceOW9l71eYPa7oGfQvYOdgG19zCjdc4DcsfuZ+w==
 
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.5"

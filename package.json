@@ -15,7 +15,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@walletconnect/web3-provider": "^1.6.5",
-    "@yieldhubfinance/blockchain-addressbook": "^0.3.0",
+    "@yieldhubfinance/blockchain-addressbook": "^0.4.0",
     "axios": "^0.21.1",
     "bignumber.js": "^9.0.1",
     "blockchain-addressbook": "^0.22.0",
