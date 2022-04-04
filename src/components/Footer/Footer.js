@@ -12,15 +12,15 @@ const Footer = () => {
 
   return (
     <div className={classes.root}>
-      {/* <a
-        href="https://docs.yieldhub.finance"
+      <a
+        href="https://yieldhubfinance.gitbook.io/yieldhub-docs/"
         target="_blank"
         rel="noopener noreferrer"
         className={classes.link}
       >
         <i className={`fas fa-book ${classes.linkIcon}`} />
         <span>{t('docs')}</span>
-      </a> */}
+      </a>
 
       <a
         href="https://github.com/yieldhubfinance"
