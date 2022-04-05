@@ -47,7 +47,7 @@ export {
   beefyUniV2ZapABI,
   uniswapV2PairABI,
   uniswapV2RouterABI,
-  yieldhubOmnidexZapABI,
+  yieldhubZapABI,
   omnidexRouter01ABI,
   launchPoolABI,
 } from './abi';

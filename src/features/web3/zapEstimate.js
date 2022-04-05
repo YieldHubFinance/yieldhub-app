@@ -1,4 +1,4 @@
-import { yieldhubOmnidexZapABI, omnidexRouter01ABI } from 'features/configure';
+import { yieldhubZapABI, omnidexRouter01ABI } from 'features/configure';
 
 export const zapDepositEstimate = ({
   web3,
@@ -7,7 +7,7 @@ export const zapDepositEstimate = ({
   tokenAddress,
   tokenAmount,
 }) => {
-  const contract = new web3.eth.Contract(yieldhubOmnidexZapABI, zapAddress);
+  const contract = new web3.eth.Contract(yieldhubZapABI, zapAddress);
   // const ret = contract.methods.estimateSwap(vaultAddress, tokenAddress, tokenAmount).call();
   // console.log(ret);
   return contract.methods.estimateSwap(vaultAddress, tokenAddress, tokenAmount).call();

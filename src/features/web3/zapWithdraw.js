@@ -1,4 +1,4 @@
-import { yieldhubOmnidexZapABI } from '../configure';
+import { yieldhubZapABI } from '../configure';
 import { enqueueSnackbar } from '../common/redux/actions';
 
 export const zapWithdraw = async ({
@@ -11,7 +11,7 @@ export const zapWithdraw = async ({
 }) => {
   console.log('yieldhubOut(vaultAddress, amount)', vaultAddress, amount);
 
-  const contract = new web3.eth.Contract(yieldhubOmnidexZapABI, zapAddress);
+  const contract = new web3.eth.Contract(yieldhubZapABI, zapAddress);
   const transaction = contract.methods.yieldhubOut(vaultAddress, amount).send({
     from: address,
   });
@@ -37,7 +37,7 @@ export const zapWithdrawAndSwap = async ({
     amountOutMin
   );
 
-  const contract = new web3.eth.Contract(yieldhubOmnidexZapABI, zapAddress);
+  const contract = new web3.eth.Contract(yieldhubZapABI, zapAddress);
   const transaction = contract.methods
     .yieldhubOutAndSwap(vaultAddress, amount, tokenOut, amountOutMin)
     .send({
