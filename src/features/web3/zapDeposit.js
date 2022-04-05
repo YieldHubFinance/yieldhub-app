@@ -1,4 +1,4 @@
-import { yieldhubOmnidexZapABI } from '../configure';
+import { yieldhubZapABI } from '../configure';
 import { enqueueSnackbar } from '../common/redux/actions';
 
 export const zapDeposit = async ({
@@ -12,7 +12,7 @@ export const zapDeposit = async ({
   swapAmountOutMin,
   dispatch,
 }) => {
-  const contract = new web3.eth.Contract(yieldhubOmnidexZapABI, zapAddress);
+  const contract = new web3.eth.Contract(yieldhubZapABI, zapAddress);
   const data = await _zapDeposit({
     contract,
     address,
