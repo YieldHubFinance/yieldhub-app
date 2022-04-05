@@ -28,15 +28,6 @@ const styles = theme => ({
       fontSize: '14px',
     },
   },
-  boost: {
-    color: '#5a8f69',
-    fontWeight: 'bold',
-    '& .MuiAvatar-root': {
-      position: 'absolute',
-      top: 0,
-      right: '-20px',
-    },
-  },
   reset: {
     border: '1px solid ' + theme.palette.background.border,
     padding: '4px 8px',

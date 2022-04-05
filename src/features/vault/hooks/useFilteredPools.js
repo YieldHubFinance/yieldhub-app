@@ -8,7 +8,6 @@ const DEFAULT = {
   hideDecomissioned: true,
   hideZeroBalances: false,
   hideZeroVaultBalances: false,
-  showBoosted: false,
   showExperimental: false,
 };
 
@@ -83,10 +82,6 @@ const useFilteredPools = (pools, tokens) => {
     filteredPools = hideDecomissioned(filteredPools, tokens);
   }
 
-  if (filters.showBoosted) {
-    filteredPools = showBoosted(filteredPools, vaultLaunchpools);
-  }
-
   filteredPools = Experimental(filteredPools, filters.showExperimental);
 
   return { filteredPools, toggleFilter, filters };
@@ -95,12 +90,6 @@ const useFilteredPools = (pools, tokens) => {
 function Experimental(pools, show) {
   return pools.filter(pool => {
     return show ? pool.experimental : !pool.experimental;
-  });
-}
-
-function showBoosted(pools, vaultLaunchpools) {
-  return pools.filter(pool => {
-    return !!vaultLaunchpools[pool.id];
   });
 }
 
