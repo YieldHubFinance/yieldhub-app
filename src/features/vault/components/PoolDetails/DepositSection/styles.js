@@ -51,6 +51,8 @@ const styles = theme => ({
     border: `1px solid ${theme.palette.primary.main}`,
     color: primaryColor[0],
     '&:hover': {
+      backgroundColor: `${theme.palette.primary.main}`,
+
       '& .MuiButton-label': {
         color: 'white',
       },
