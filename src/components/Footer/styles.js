@@ -3,6 +3,7 @@ const styles = theme => ({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',
+    flexWrap: 'wrap',
     maxWidth: '40rem',
     margin: '2rem auto',
   },
@@ -26,7 +27,7 @@ const styles = theme => ({
     },
   },
   linkIcon: {
-    marginRight: '0.5rem',
+    // marginRight: '0.5rem',
     minWidth: '24px',
   },
 });
