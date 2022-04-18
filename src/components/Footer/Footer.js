@@ -51,6 +51,15 @@ const Footer = () => {
         <i className={`fab fa-discord ${classes.linkIcon}`} />
         <span>discord</span>
       </a>
+      <a
+        href="https://medium.com/@yieldhubfinance"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={classes.link}
+      >
+        <i className={`fab fa-medium ${classes.linkIcon}`} />
+        <span>medium</span>
+      </a>
     </div>
   );
 };
