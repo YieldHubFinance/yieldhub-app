@@ -25,10 +25,19 @@ const styles = theme => ({
     '&:hover': {
       textDecoration: 'underline',
     },
+
+    '@media (max-width: 600px)': {
+      '& span': {
+        display: 'none',
+      },
+    },
   },
   linkIcon: {
     // marginRight: '0.5rem',
     minWidth: '24px',
+    '@media (max-width: 600px)': {
+      padding: '12px',
+    },
   },
 });
 
