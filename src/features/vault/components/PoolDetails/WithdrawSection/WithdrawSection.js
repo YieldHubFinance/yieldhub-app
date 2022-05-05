@@ -67,7 +67,7 @@ const WithdrawSection = ({ pool, index, sharesBalance }) => {
     ];
 
     if (pool.zap) {
-      const pairTokens = pool.zap.tokens.filter(t => t.symbol !== nativeCoin.wrappedSymbol);
+      const pairTokens = pool.zap.tokens;
       if (pairTokens.length) {
         outputs.push(
           {
