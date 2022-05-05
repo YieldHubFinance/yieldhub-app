@@ -23,7 +23,7 @@ import {
 } from 'features/vault/redux/hooks';
 import { shouldHideFromHarvest } from 'features/helpers/utils';
 import { convertAmountToRawNumber, convertAmountFromRawNumber } from 'features/helpers/bignumber';
-import Button from 'components/CustomButtons/Button.js';
+import Button from '../../../../../components/CustomButtons/Button';
 import styles from './styles';
 
 const useStyles = makeStyles(styles);
